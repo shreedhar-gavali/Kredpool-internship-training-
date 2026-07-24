@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Layout</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <style>
+        html{overflow-y:scroll;}
+        .container{
+            display: grid;
+            grid-template-columns: 70% 30%; 
+            gap: 20px;
+        }
+        .maincontent-left{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        .video-section{
+            width:100%;
+        }
+        .video-section video{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .channel-bell{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+        .channel-name , .bell-icon{
+            display: flex;
+            border: solid black thin;
+            border-radius: 20px;
+            box-shadow: -10px 10px 30px  grey;
+            background-color: lightgrey;
+            width: 100px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -10px 10px 30px grey;
+        }
+        .fa-youtube{
+            color: red; 
+            size: 40px;}
+
+
+        .description-card{
+            border: thin solid rgb(230, 228, 228);
+            border-radius:10px;
+            padding:15px;
+            background-color: rgb(209, 208, 208);
+        }
+
+        .right-sidecontent{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            height: auto;
+        }
+        .scroll-bar{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 550px;
+            overflow-y: auto;
+            overscroll-behavior-y: auto;
+            background-color: whitesmoke;
+            border: thin solid black;
+            border-radius: 20px;
+            
+           
+        }
+       .playlist-name{
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        background-color: whitesmoke;
+        
+       }
+        .video-cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            height: 400px;
+            border: solid thin black ;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            
+        }
+        .thumbnail{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-height: fit-content;
+            background-color:white;
+             gap: 10px;
+             position: relative;
+            top: 100px; 
+        }
+        .cards{
+            display: flex;
+            flex-direction: column;
+           
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+            
+    </style>
+</head>
+<body>
+    <main class="container">
+
+        <section class="maincontent-left">
+
+            <div class="video-section">
+                <video  controls  muted >
+                    <source src="/images/sample1.mp4.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+            <div class="channel-bell">
+                <div class="channel-name">
+                        <i class="fa-brands fa-youtube"></i>The3Dev
+            </div>
+            <div class="bell-icon"> 
+                <div class="fa-solid fa-bell"></div>
+        </div>
+           
+        </div>
+             <div class="description-card">
+                
+                    descriptions
+                    
+<h4>924,721 views  Jun 28, 2020</h4>
+<p>Lec-06 In this lecture,i explained the concept and lab of CAT,TOUCH,NANO and Vi Command of linux.Linux is the most popular server OS(Operating System). Linux is a clone of UNIX. Knowing one is as good as knowing the other. This tutorial is for absolute beginners. You will know how Linux works. You can learn Linux, by installing it right on your existing Windows or Mac OS systems!</p>
+ <br>
+<p>
+Now you can Donate us via Paypal or Google Pay/Paytm/PhonePe
+Paypal link : https://www.paypal.me/technicalguftgu
+GooglePay/PhonePe/BHIM UPI  : bhupinderccs@okaxis</p> <br>
+
+<p>Do subscribe to TECHNICAL GUFTGU channel and Press Bell icon & get regular updates on videos, DIRECT LINK TO CHANNEL :    / technicalguftgu  </p>
+<br>
+<p>Here are direct links of My All the Playlist: <strong>MUST CHECK</strong></p>
+<p>IPv6 Complete Tutorial for beginners Link :    • IP Version 6 Tutorials in hindi/Urdu | IPv...  </p> <br>
+
+<p>Microsoft Azure Tutorial for beginners in Hindi/Urdu AZ-103 and AZ-900 LINK :   <strong> • Microsoft Azure Tutorial for Beginners in ...</strong>  </p> 
+
+Cloud computing tutorials For beginners Link :    • Cloud Computing Tutorial for Beginners in ...  
+
+AWS Solution Architect-Associate complete Tutorials Link :    • AWS Solution Architect & Sysops Tutorial f...  
+
+CCNA Complete Tutorials /Computer Networking Link :    • CCNA Full course in Hindi/Urdu | Computer ...  
+This is the best channel for AWS Tutorials, Microsoft Azure tutorials, 2G,3G, LTE, CCNA, Cloud computing and for others topics related to cloud and computer networking. Technical Guftgu is the only platform, which provides you entire training on white board, so that you feels that, you are taking real time training.
+Bhupinder Rajput Sir is having 8 Years of Experience in the field of technical trainings in entire india.
+NOTE : If you would like to organise Bhupinder Rajput Sir workshop in your College or University, write mail to us.
+
+For More Information:
+Please write us at : technicalguftgu99@gmail.com
+Connect with us on facebook page-Technical Guftgu for his upcoming 5 Days workshops on cloud in india and Nepal. If you would like to donate and give support to our Channel, write mail to us.
+
+Thanks For giving Your Valuable time.
+Regards,
+Technical Guftgu Team
+                </div>
+
+        </section>
+
+        <aside class="right-sidecontent">
+
+                    <div class="scroll-bar">
+                        <div class="playlist-name">
+                           <h2>Playlist Name here </h2> 
+                        </div>
+                        <div class="video-cards"> 
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+                        </div>
+                        <div class="video-cards">
+                              <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>   
+                        </div>
+
+                        <div class="video-cards">
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+
+                        </div>
+                    <div class="video-cards">
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+                    </div>
+                    <div class="video-cards">
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+                    </div>
+                     <div class="video-cards">
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+                    </div>
+                     <div class="video-cards">
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+                    </div>
+                     <div class="video-cards">
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+                    </div>
+                     <div class="video-cards">
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+                    </div>
+                     <div class="video-cards">
+                            <h3>Title of the video</h3>
+                            <p>The3Dev</p>
+                            <p>views</p>
+                    </div>
+                                        .
+
+            </div>
+            <div class="thumbnail">
+                <div class="cards">
+                    <h3>thumbnail</h3>
+                </div>
+                                <div class="cards">
+                    <h3>thumbnail</h3>
+                </div>
+                                <div class="cards">
+                    <h3>thumbnail</h3>
+                </div>
+                                <div class="cards">
+                    <h3>thumbnail</h3>
+                </div>
+                                <div class="cards">
+                    <h3>thumbnail</h3>
+                </div>
+            </div>
+                    
+        </aside>
+    </main>
+</body>
+</html>

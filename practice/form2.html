@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form 
+    action="/form/output/formstore.txt" 
+    method="post" 
+    target="_blank" 
+    autocomplete="on"
+    name="form2"
+    novalidate
+    >
+    <template id="card">
+        
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+    
+    </template>
+    <div id="container">
+
+    </div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <input type="radio" id="option1" name="option" value="current account">
+    <label for="option1">current account</label>
+    <br>
+
+    <input type="radio" id="option2" name="option" value="savings account">
+    <label for="option2">savings account</label>
+    <br><br>
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" required placeholder="Enter amount">
+<br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required placeholder="write some message"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit">
+  
+    
+
+</form>
+
+
+
+<script>
+    let template=document.getElementById("card");
+    let clone1=template.content.cloneNode(true);
+    document.getElementById("container").appendChild(clone1);
+
+  
+</script>
+
+</body>
+</html>

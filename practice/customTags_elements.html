@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<name>this is custom tag</name>
+
+<user-name name="shreedhar"></user-name>
+<user-name name="gavali"></user-name>
+
+
+<hello-world id="card"> <!--custom element-->   
+</hello-world>
+
+<hello-world id="card1"></hello-world>
+
+      <script>
+class Hello extends HTMLElement{
+        connectedCallback(){
+            this.innerHTML="<h3>Hello World </h3>";
+        }
+        }
+
+        customElements.define("hello-world",  Hello);
+
+class nameOfCandidate extends HTMLElement{
+    connectedCallback(){
+        let uname = this.getAttribute("name");
+        this.innerHTML=`<h6>${uname}</h6>`;
+    }
+}
+customElements.define("user-name" ,nameOfCandidate );
+
+      </script>
+</body>
+</html>

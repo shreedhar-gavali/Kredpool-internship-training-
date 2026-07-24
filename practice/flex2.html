@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 100px;
+        display:flex;
+        gap: 10px;
+        border: solid thin black;
+        flex-direction: column;
+        background-color: blueviolet;
+        
+    }
+    * { box-sizing: border-box; }
+    .container .div{
+        border: solid medium black;
+            }
+    .container .home:hover{
+        background-color: bisque;
+    }
+    .container .contact:hover{
+        background-color:bisque ;
+    }
+    .container .content:hover{
+        background-color: bisque;
+    }
+
+    #box:hover{
+        width: 300px;
+
+        background-color: blue;
+    }
+    #box{
+        border: thin solid black;
+        margin: 10px;
+        padding: 10px;
+        background-color: blueviolet;
+        transition-property:width;
+        width: 100px;
+        transition-duration: 3s;
+    }
+    .box2{
+        border: thick black solid;
+        margin: 10px;
+        padding: 10px;
+        background-color: brown;
+        width: 200px;
+        animation: change 6s;
+    }
+
+    .box3 #big{
+      
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        animation-name: scale;
+        animation-duration:6s;
+        animation-iteration-count: 2;
+
+    }
+    .box4 h3{
+        width: 100px;
+        border: solid thin black;
+    }
+    .box4 h3:hover{
+       view-transition-name: color;
+       transition-delay: 2s;
+        color: brown;
+        
+    }
+
+    @keyframes scale {
+        from{
+            width: 200px;;
+        }
+        50%{
+           
+            width: 150px;
+
+        }
+        100%{
+            width: 100px;
+        }
+    }
+@keyframes change {
+    10%{
+         background-color: aliceblue;
+    }
+
+    50%{
+        background-color: rgb(228, 136, 15);
+    }
+
+    70%{
+        background-color: aqua;
+    }
+
+    100%{
+        background-color: brown;
+    }
+    
+}
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="home">Home</div>
+    <div class="content">page</div>
+    <div class="contact">contact</div>
+
+    </div>
+<br>
+    <div id="box"></div>
+
+    <br>
+
+    <div class="box2"><button>click</button></div>
+
+    <div class="box3"><button id="big">wow</button></div>
+
+    <div class="box4"><h3>hello</h3></div>
+</body>
+</html>

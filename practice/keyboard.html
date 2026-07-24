@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard</title>
+    <style>
+       
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            /* border: solid black thin; */
+          width: fit-content;
+             box-sizing: border-box;
+           background-color: white;
+        }
+        .row{
+           display: flex;
+           gap: 25px;
+       
+        }
+         
+        .group{
+    gap:20px;
+    display: flex;  
+    
+            }
+
+        .key{
+    height: 25px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: thin solid black;
+    border-radius: 5px;    
+        }
+        
+.midkeys{
+   display: flex;
+    border: solid black thin;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+}
+.backspaceKey{
+        display: flex;
+        width: 80px;
+        height: 50px;
+        border: solid thin black;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;         
+}
+
+.tabKey{
+     display: flex;  
+    border: solid black thin;
+        border-radius: 5px;
+        width: 80px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+}
+
+.backslashKey{
+display: flex;
+border: solid thin black;
+border-radius: 5px;
+width: 60px;
+height: 65px;
+position: relative;
+right:10px;
+align-items: center;
+justify-content: center;
+}
+  
+.capsKey{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black thin;
+    border-radius: 5px;
+}
+.enterKey{ 
+        display: flex;
+        width: 120px;
+        height: 50px;
+        border: solid black thin;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;         
+}
+.shiftKey{
+    display: flex;
+    border: solid black thin;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.ctrl1{
+    display: flex;
+    border: solid black thin;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 60px;
+}
+.ctrl2 ,.home ,.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin black;
+    border-radius: 5px;
+    width: 65px;
+    height: 60px;
+}
+.group-6{
+    gap: 8px;
+    display: flex;
+}
+
+.Fn{
+    display: flex;
+    border: solid black thin;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 60px;
+}
+.windows{
+    display: flex;
+    border:solid thin black;
+    border-radius: 5px;
+    width: 65px;
+    height:60px;
+    justify-content: center;
+    align-items: center;
+}
+.alt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin black;
+    border-radius: 5px;
+    width: 65px;
+    height: 60px;
+}
+.spacebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black thin;
+    border-radius: 5px;
+    width: 300px;
+    height: 65px;
+}
+.groupDirection{
+    display:flex;
+    flex-direction: column;
+    
+}
+.up , .down{
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    border: solid black thin;
+    border-radius: 5px;
+    width: 65px;
+    height: 30px;
+    margin: 1px;
+}
+.key,
+.midkeys,
+.tabKey,
+.backspaceKey,
+.capsKey,
+.enterKey,
+.shiftKey,
+.ctrl1,
+.ctrl2,
+.home,
+.end,
+.windows,
+.alt,
+.spacebar,
+.Fn,
+.up,
+.down,
+.backslashKey,
+.shreedhar{
+
+    background: #f5f5f5;
+
+    border:thin  solid #666;
+
+    box-shadow: -20px 10px 20px ;
+
+ color:black;
+
+}
+.shreedhar{
+     display: flex;
+    border: solid black thin;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    background-color: red;
+}
+
+    </style>
+</head>
+<body><br>
+    <div class="container">
+        <div class="row">
+
+            <div class="group">
+                <div class="key">Esc</div>
+            </div>
+
+            <div class="group">
+
+            <div class="key">F1</div>
+            <div class="key">F2</div>
+            <div class="key">F3</div>
+            <div class="key">F4</div>
+            <div class="key">F5</div>
+            <div class="key">F6</div>
+            <div class="key">F7</div>
+            <div class="key">F8</div>
+            <div class="key">F9</div>
+            <div class="key">F10</div>
+            <div class="key">F11</div>
+            <div class="key">F12</div>
+
+            </div>
+            
+            <div class="group">
+            <div class="key">Insert</div>
+            <div class="key">PrtSrc</div>
+            <div class="key">Delete</div>
+            </div>
+           
+        </div>
+
+        <div class="row">
+            
+            <div class="group">
+             <div class="midkeys">~</div>
+                <div class="midkeys">1</div>
+                <div class="midkeys">2</div>
+                <div class="midkeys">3</div>
+                <div class="midkeys">4</div>
+                <div class="midkeys">5</div>
+                <div class="midkeys">6</div>
+                <div class="midkeys">7</div>
+                <div class="midkeys">8</div>
+                <div class="midkeys">9</div>
+                <div class="midkeys">0</div>
+                <div class="midkeys">-</div>
+                <div class="midkeys">+</div>
+
+            </div>
+
+            <div class="group">
+                <div class="backspaceKey">Backspace</div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="group">
+                <div class="tabKey">Tab</div>
+            </div>
+
+            <div class="group">
+                <div class="midkeys">Q</div>
+                <div class="midkeys">W</div>
+                <div class="shreedhar">E</div>
+                <div class="shreedhar">R</div>
+                <div class="midkeys">T</div>
+                <div class="midkeys">Y</div>
+                <div class="midkeys">U</div>
+                <div class="midkeys">I</div>
+                <div class="midkeys">O</div>
+                <div class="midkeys">P</div>
+                <div class="midkeys">[</div>
+                <div class="midkeys">]</div>
+            </div>
+
+        <div class="group">
+            <div class="backslashKey">\</div>
+        </div>
+
+        </div>
+        <div class="row">
+            <div class="group">
+                <div class="capsKey">CapsLk</div>
+            </div>
+
+            <div class="group">
+                <div class="shreedhar">A</div>
+                <div class="shreedhar">S</div>
+                <div class="shreedhar">D</div>
+                <div class="midkeys">F</div>
+                <div class="midkeys">G</div>
+                <div class="shreedhar">H</div>
+                <div class="midkeys">J</div>
+                <div class="midkeys">K</div>
+                <div class="midkeys">L</div>
+                <div class="midkeys">;</div>
+                <div class="midkeys">"</div>
+               
+            </div>
+            <div class="group">
+                <div class="enterKey">Enter</div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="group">
+                <div class="shiftKey">Shift</div>
+            </div>
+
+            <div class="group">
+
+                    <div class="midkeys">Z</div>
+                    <div class="midkeys">X</div>
+                    <div class="midkeys">C</div>
+                    <div class="midkeys">V</div>
+                    <div class="midkeys">B</div>
+                    <div class="midkeys">N</div>
+                    <div class="midkeys">M</div>
+                    <div class="midkeys"><</div>
+                    <div class="midkeys">></div>
+                    <div class="midkeys">/</div>
+
+        </div>
+
+        <div class="group">
+                <div class="shiftKey">Shift</div>
+            </div>
+
+
+    </div>
+    <div class="row">
+        <div class="group-6">
+         <div class="ctrl1">Ctrl</div>
+        <div class="Fn">Fn</div>
+    </div>
+
+        <div class="windows">🪟</div>
+        <div class="alt">Alt</div>
+
+        <div class="spacebar">Spacebar</div>
+         <div class="alt">Alt</div>
+         <div class="ctrl2">Ctrl</div>
+
+         <div class="home">Home</div>
+         <div class="groupDirection">
+            <div class="up">up</div>
+            <div class="down">down</div>
+         </div>
+         <div class="end">End</div>
+
+    </div>
+    </div>
+    
+</body>
+</html>

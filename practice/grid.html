@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice</title>
+    <style>
+        .main{
+            display: grid;
+           grid-template-columns:100px, fr , 100px;
+            grid-template-rows:repeat(3,50px) ;
+         
+            border: solid black thin;
+            gap: 10px;
+        
+        }
+        .main div{
+            padding: 10px;
+        }
+
+        .main .box1{
+            background-color: red;
+            grid-column:1/4;
+            
+   }
+        .main .box2{
+        background-color: powderblue;
+        grid-column: 1/2;
+        grid-row: 2/4; 
+
+        }
+           
+        .main .box3{
+            background-color: olive;
+
+            grid-row:2/4;
+            grid-column:2/4;
+         
+        }
+        .main .box4{
+            background-color: rgb(64, 241, 241);
+            grid-column:1/4;
+        
+
+        }
+
+        .main .box5{
+            background-color: rgb(29, 88, 238);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">header</div>
+        <div class="box2">sidebar</div>
+        <div class="box3">content</div>
+        <div class="box4">footer</div>
+                                                                        
+      
+    </div>
+</body>
+</html>
