@@ -1,0 +1,48 @@
+
+
+.container{
+    display: grid;
+    grid-template-columns:250px 1fr;
+    height:100vh;
+    width: 100%;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    gap: 10px;
+    background-color: gray;
+    border:1px solid black;
+    
+   
+}
+.navbar a{
+      color:black;
+  padding: 16px;
+  display: block;
+  background-color: whitesmoke;
+  gap: 10px;
+  border-radius: 10px;
+}
+.navbar a:hover{
+    background-color: lightslategray;
+    color: black;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css"> 
+     
+</head>
+<body>
+    
+   <div class="container">
+
+<div class="logo">
+    <img src="/images/bank-icon-logo-design-vector.webp" alt="Logo" height="100px" width="100px">
+</div>
+
+<div class="bankname">
+ <h1 >
+    Dyaandeep co-operative.credit society Ltd. ,Mumbai
+</h1 >
+<h5>Applicant/Nominee Information</h5>
+</div>
+
+<div class="photo">
+    <img src="/images/applicant photo.jpg " alt="applicant image">
+</div>    
+</div>
+
+
+<div class="branchname">
+    <label for="branch" >Branch Name</label>
+    <input type="text" id="branch" name="branch">
+</div>
+
+<hr>
+
+
+<template id="temp">
+<div class="form">
+   
+    <form action="#" method="post">
+    
+     <ol> 
+        <li>
+            <fieldset>
+                <legend>Applicant Information</legend>
+         <label for="applicant"> Name</label>
+        <input type="text" id="applicant" name="applicant " marign-right="20px"> 
+         <label for="age">Age: </label>
+        <input type="number" id="age" name="age">
+        </fieldset>
+        <br>
+    </li>
+    
+
+        <li>
+        <label for="BusinessName">Business Name:</label>
+        <input type="text" id="BusinessName" name="BusinessName"> <br><br>
+</li>
+
+    <li>
+        <fieldset>
+            <legend>Nominee Information</legend>
+        <label for="Nominee"> Name:</label>
+        <input type="text" id="Nominee" name="Nominee"> 
+         <label for="ageofNominee">Age : </label>
+        <input type="number" id="ageofNominee" name="ageofNominee">
+        </fieldset> <br>
+</li>
+<li>
+        <label for="customerNumber">Customer Number: </label>
+        <input type="number" id="customerNumber" name="customerNumber"> <br><br>
+</li>
+<li>
+        <label for="address">Address: </label>
+        <input type="textarea" id="address" name="address"> <br> <br>
+    </li>
+    <li>
+        <label for="relation">Relation with Applicant: </label>
+        <input type="text" id="relation" name="relation"> 
+        <br><br>
+    </li>
+    <li>
+       <label for="accountNo">Account Number: </label>
+       <input type="number" id="accountNo" name="accountNo"> <br><br>
+    </li> 
+    <li>
+       <label for="ticketNo">Ticket Number: </label>
+       <input type="number" id="ticketNo" name="ticketNo"> <br><br>
+    </li> 
+    <li>
+       <label for="experience">Job Experience of Applicant: </label>
+       <input type="number" id="experience" name="experience"> <br><br>
+    </li> 
+
+    <li>
+       <label for="income">Annual Income: </label>
+       <input type="number" id="income" name="income"> <br><br>
+    </li> 
+
+     </ol>
+   
+    </form>
+</div> 
+</template>
+
+<div id="credentials">
+
+</div>
+
+<div>
+    <p> I hereby declare that the information provided above is true and accurate to the best of my knowledge. I understand that any false information may lead to disqualification from the nomination process.</p>
+</div>
+
+<div style="text-align:right";>
+   <p> <strong>Signature of Applicant</strong> ___________</p>
+</div>
+
+<script>
+    let template=document.getElementById("temp")
+    let clone = template.content.cloneNode("true");
+    document.getElementById("credentials").append(clone);
+
+</script>
+
+
+
+</body>
+</html>
