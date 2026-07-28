@@ -62,7 +62,7 @@
         .right-sidecontent{
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
             width: 100%;
             height: auto;
         }
@@ -70,8 +70,9 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: 550px;
+            height: 500px;
             overflow-y: auto;
+            overflow-x:hidden;
             overscroll-behavior-y: auto;
             background-color: whitesmoke;
             border: thin solid black;
@@ -84,6 +85,7 @@
         flex-direction: column;
         position: sticky;
         top: 0;
+        height: calc();
         background-color: whitesmoke;
         
        }
@@ -100,7 +102,56 @@
             background-color: whitesmoke;
             
         }
-        .thumbnail{
+        .recommended-section-buttons{
+            display: flex;
+            flex-direction: row;
+             gap:5px;
+             justify-content: center;
+             align-items: center;
+             overflow-x: scroll;
+             overflow-y: hidden;
+        } 
+            
+         .all-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid thin black;
+            border-radius: 5px;
+            height: 30px;
+            width: 45px;
+        }
+
+         .fromseries-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid thin black;
+            border-radius: 5px;
+            height: 30px;
+            width: 120px;
+            
+         }
+         .fromchannel-btn{
+              display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid thin black;
+            border-radius: 5px;
+            height: 30px;
+            width: 120px;
+         }
+         .computerscience-btn{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid thin black;
+            border-radius: 5px;
+            height: 30px;
+            width:200px;
+         }
+        
+        .recommended-section{
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -108,12 +159,11 @@
             background-color:white;
              gap: 10px;
              position: relative;
-            top: 100px; 
+            top: 0px; 
         }
         .cards{
             display: flex;
             flex-direction: column;
-           
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -132,9 +182,9 @@
             <div class="video-section">
                 <video  controls  muted >
                     <source src="/images/sample1.mp4.mp4" type="video/mp4">
-                    
                 </video>
             </div>
+
             <div class="channel-bell">
                 <div class="channel-name">
                         <i class="fa-brands fa-youtube"></i>The3Dev
@@ -186,9 +236,11 @@ Technical Guftgu Team
         <aside class="right-sidecontent">
 
                     <div class="scroll-bar">
+                        
                         <div class="playlist-name">
                            <h2>Playlist Name here </h2> 
                         </div>
+
                         <div class="video-cards"> 
                             <h3>Title of the video</h3>
                             <p>The3Dev</p>
@@ -240,11 +292,19 @@ Technical Guftgu Team
                             <h3>Title of the video</h3>
                             <p>The3Dev</p>
                             <p>views</p>
-                    </div>
-                                        .
+                 </div>
 
             </div>
-            <div class="thumbnail">
+
+                    <div class="recommended-section-buttons">
+                            <div class="all-btn">ALL</div>
+                            <div class="fromseries-btn">From the Series</div>
+                            <div class="fromchannel-btn">From The3Dev</div>
+                            <div class="computerscience-btn">Computer Science</div>
+                    </div> 
+
+            <div class="recommended-section">
+
                 <div class="cards">
                     <h3>thumbnail</h3>
                 </div>
