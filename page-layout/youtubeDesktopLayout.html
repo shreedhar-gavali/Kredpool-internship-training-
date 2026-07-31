@@ -8,7 +8,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
     <style>
-        html{overflow-y:scroll;}
+        html{overflow-y:scroll;
+        overflow-x: hidden;}
         .container{
             display: grid;
             grid-template-columns: 70% 30%; 
@@ -110,7 +111,9 @@
              align-items: center;
              overflow-x: scroll;
              overflow-y: hidden;
+             background-color: antiquewhite;
         } 
+            .recommended-section-buttons div{flex-shrink: 0;}
             
          .all-btn{
             display: flex;
@@ -149,6 +152,15 @@
             border-radius: 5px;
             height: 30px;
             width:200px;
+         }
+         .LearningJS-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: thin solid black;
+            border-radius: 5px;
+            height: 30px;
+            width: fit-content;
          }
         
         .recommended-section{
@@ -301,6 +313,7 @@ Technical Guftgu Team
                             <div class="fromseries-btn">From the Series</div>
                             <div class="fromchannel-btn">From The3Dev</div>
                             <div class="computerscience-btn">Computer Science</div>
+                            <div class="LearningJS-btn">Learning JS</div>
                     </div> 
 
             <div class="recommended-section">
