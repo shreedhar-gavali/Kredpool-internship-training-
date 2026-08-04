@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Events Demo</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin:40px;
+        }
+
+        input,select,button{
+            display:block;
+            margin:10px 0;
+            padding:8px;
+            width:250px;
+        }
+
+        #message{
+            margin-top:20px;
+            color:blue;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form id="myForm">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter Name"
+        required
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        required
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        required
+    >
+
+    <select id="course">
+        <option value="">Select Course</option>
+        <option>Java</option>
+        <option>JavaScript</option>
+        <option>Angular</option>
+    </select>
+
+    <button type="submit">Submit</button>
+
+    <button type="reset">Reset</button>
+
+</form>
+
+<p id="message"></p>
+
+<script>
+
+const form = document.getElementById("myForm");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const course = document.getElementById("course");
+const msg = document.getElementById("message");
+
+
+// Focus Event
+name.addEventListener("focus", () => {
+    msg.innerText = "Name field is focused";
+});
+
+
+// Blur Event
+email.addEventListener("blur", () => {
+    msg.innerText = "Email field lost focus";
+});
+
+
+// Input Event
+password.addEventListener("input", () => {
+    msg.innerText = "Password Length : " + password.value.length;
+});
+
+
+// Change Event
+course.addEventListener("change", () => {
+    msg.innerText = "Selected Course : " + course.value;
+});
+
+
+// Submit Event
+form.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    msg.innerText = "Form Submitted Successfully";
+});
+
+
+// Reset Event
+form.addEventListener("reset", () => {
+
+    msg.innerText = "Form Reset Successfully";
+
+});
+
+
+// Invalid Event
+email.addEventListener("invalid", () => {
+
+    msg.innerText = "Please enter a valid Email";
+
+});
+
+</script>
+
+</body>
+</html>

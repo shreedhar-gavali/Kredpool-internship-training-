@@ -12,7 +12,17 @@ const approvedamount=[
     { amount: 250000 }
 ]
 
-const obj = Object.assign({}, loans,approvedamount);
+const merge = loans.map((loan,index)=>({
+  ...loan ,
+  ...approvedamount[index]
+}))
 
-console.log(obj.amount);
+console.log(merge);
+
+console.log(merge.filter((amounts)=>amounts.amount>10000));
+
+const totalamount=merge.reduce((accumaltor,total)=>accumaltor=total.amount,0
+);
+
+console.log(` Total Amount is ${totalamount}`);
 
