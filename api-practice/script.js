@@ -1,6 +1,6 @@
-let button = document.getElementById('btnLoad');
+// let button = document.getElementById('btnLoad');
 
-button.addEventListener('click', loadStudents);
+// button.addEventListener('click', loadStudents);
 
      async function loadStudents(){
         console.log('Button clicked');
@@ -9,9 +9,10 @@ button.addEventListener('click', loadStudents);
            
         const getdata=   response.json();
 
-        // console.log(getdata);
+        console.log(getdata);
 
-            document.getElementById('name').textContent=getdata.name;
-            document.getElementById('email').textContent=getdata.email;
+            // document.getElementById('name').textContent=getdata.name;
+            // document.getElementById('email').textContent=getdata.email;
     }
+    loadStudents();
 
