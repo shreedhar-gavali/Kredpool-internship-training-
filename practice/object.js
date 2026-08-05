@@ -21,7 +21,7 @@
 // const arr1=[
 //     {name:"krishna",age:21,city:"Pune"},
 //     {name:"rahul",age:22,city:"Mumbai"},
-// ]
+// ]                       
 
 const obj={
     name:"krishna",
