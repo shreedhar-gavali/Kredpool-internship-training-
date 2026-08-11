@@ -17,7 +17,7 @@ return promise =new Promise((resolve, reject) => {
 
 async function checkLogin() {
     try{
-        const data = await login("admin" , "1923");
+        const data = await login("admin" , "123");
         console.log(data);
     }
     catch(error){
