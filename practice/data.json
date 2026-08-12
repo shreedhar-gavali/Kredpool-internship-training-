@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "age": 24,
+    "city": "Pune",
+    "email": "rahul@example.com",
+    "skills": ["JavaScript", "HTML", "CSS"]
+  },
+  {
+    "id": 2,
+    "name": "Priya Patil",
+    "age": 22,
+    "city": "Mumbai",
+    "email": "priya@example.com",
+    "skills": ["React", "JavaScript", "Git"]
+  },
+  {
+    "id": 3,
+    "name": "Amit Kulkarni",
+    "age": 27,
+    "city": "Bangalore",
+    "email": "amit@example.com",
+    "skills": ["Node.js", "MongoDB", "Express"]
+  },
+  {
+    "id": 4,
+    "name": "Sneha Joshi",
+    "age": 25,
+    "city": "Nashik",
+    "email": "sneha@example.com",
+    "skills": ["Java", "SQL", "Spring Boot"]
+  },
+  {
+    "id": 5,
+    "name": "Vikas Deshmukh",
+    "age": 29,
+    "city": "Hyderabad",
+    "email": "vikas@example.com",
+    "skills": ["Python", "Django", "PostgreSQL"]
+  },
+  {
+    "id": 6,
+    "name": "Neha More",
+    "age": 23,
+    "city": "Kolhapur",
+    "email": "neha@example.com",
+    "skills": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 7,
+    "name": "Rohan Jadhav",
+    "age": 26,
+    "city": "Satara",
+    "email": "rohan@example.com",
+    "skills": ["AWS", "Linux", "Docker"]
+  },
+  {
+    "id": 8,
+    "name": "Pooja Shinde",
+    "age": 21,
+    "city": "Sangli",
+    "email": "pooja@example.com",
+    "skills": ["JavaScript", "React", "CSS"]
+  }
+]

@@ -10,7 +10,7 @@
 // str1=['s','h','r','i','d','h','a','r'];
 // console.log(str1.reverse());
 
-const str2='javascript is a programming lang';
+const str2='javascript is a programming lang'; //finding the  number of vowels in a string 
 let count=0;
 for(let i=0; i<str2.length;i++){
     if(str2[i]=='a'||
@@ -22,8 +22,6 @@ for(let i=0; i<str2.length;i++){
     ){
         count++;
     }
-    // else{
-    //     console.log("string doesn't have any vowels");
-    // }
+   
 }
 console.log(count);
